@@ -1,0 +1,32 @@
+sqlite: &sqlite
+  adapter: sqlite3
+  database: db/<%= Rails.env %>.sqlite3
+
+mysql: &mysql
+  adapter: mysql2
+  username: root
+  password:
+  database: chromotype_<%= Rails.env %>
+
+postgresql: &postgresql
+  adapter: postgresql
+  username: postgres
+  password:
+  database: chromotype_<%= Rails.env %>
+  min_messages: ERROR
+
+defaults: &defaults
+  pool: 16
+  timeout: 5000
+  host: localhost
+  <<: *<%= ENV['DB'] || "postgresql" %>
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
+  # presumably, we'd erb-echo the production password from /etc/something here.
