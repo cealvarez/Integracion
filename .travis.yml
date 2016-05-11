@@ -3,6 +3,11 @@ rvm:
   - 2.3.0
   - jruby
   - rbx-2
-group :test do
-  gem 'rake'
-end
+  
+
+before_script:
+  - gem install bundler -v 1.11.2
+  - rake setup
+  - rake elasticsearch:update
+  - rake bundle:clean
+  - rake bundle:install
