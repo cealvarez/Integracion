@@ -3,3 +3,6 @@ rvm:
   - 2.3.0
   - jruby
   - rbx-2
+group :test do
+  gem 'rake'
+end
