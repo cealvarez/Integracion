@@ -20,25 +20,4 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  tags:
-    when:
-      name: when
-      description: When something was originally captured
-    seasons:
-      name: seasons
-      spring: spring
-      summer: summer
-      autumn: autumn
-      winter: winter
-    where:
-      name: where
-      description: Where in the world this is from
-    file:
-      name: file
-      description: Files found on this local computer
-    with:
-      name: with
-      description: The make and model of the capture device
-    who:
-      name: who
-      description: Face tags
+  hello: "Hello world"

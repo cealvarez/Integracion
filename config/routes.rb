@@ -1,10 +1,4 @@
-Chromotype::Application.routes.draw do
-
-  resources :images, only: :index do
-    get 'random', on: :collection
-  end
-
-  root 'images#index'
+Rails.application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
