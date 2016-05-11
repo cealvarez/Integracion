@@ -4,7 +4,5 @@ rvm:
   - jruby
   - rbx-2
   
-
-script:
-  - bundle exec rake build
-  - bundle exec rake builddoc
+cache: bundler
+sudo: false
