@@ -1,0 +1,93 @@
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+---------------------------------------
+ApiControllerTest: test_should_get_home
+---------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+---------------------------------------
+ApiControllerTest: test_should_get_home
+---------------------------------------
+Processing by ApiController#home as HTML
+Completed 500 Internal Server Error in 138ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+---------------------------------------
+ApiControllerTest: test_should_get_home
+---------------------------------------
+Processing by ApiController#home as HTML
+  Rendered api/home.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 1438ms (Views: 1438.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+---------------------------------------
+ApiControllerTest: test_should_get_home
+---------------------------------------
+Processing by ApiController#home as HTML
+  Rendered api/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 187ms (Views: 186.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------
+ApiControllerTest: test_suma
+----------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+---------------------------------------
+ApiControllerTest: test_should_get_home
+---------------------------------------
+Processing by ApiController#home as HTML
+  Rendered api/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 201ms (Views: 201.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------
+ApiControllerTest: test_suma
+----------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+---------------------------------------
+ApiControllerTest: test_should_get_home
+---------------------------------------
+Processing by ApiController#home as HTML
+  Rendered api/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 206ms (Views: 206.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+---------------------------------------
+ApiControllerTest: test_should_get_home
+---------------------------------------
+Processing by ApiController#home as HTML
+  Rendered api/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 198ms (Views: 197.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------
+ApiControllerTest: test_suma
+----------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------
+ApiControllerTest: test_suma
+----------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+---------------------------------------
+ApiControllerTest: test_should_get_home
+---------------------------------------
+Processing by ApiController#home as HTML
+  Rendered api/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 207ms (Views: 206.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------
+ApiControllerTest: test_suma
+----------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+---------------------------------------
+ApiControllerTest: test_should_get_home
+---------------------------------------
+Processing by ApiController#home as HTML
+  Rendered api/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 203ms (Views: 203.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
