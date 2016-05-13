@@ -25,3 +25,28 @@ Completed 200 OK in 56ms (Views: 48.7ms | ActiveRecord: 0.0ms)
   [1m[36m (82.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
   [1m[35m (72.5ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
   [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (5.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-13 09:29:26 -0300
+Processing by ApplicationController#home as HTML
+  Rendered text template (0.0ms)
+Completed 200 OK in 60ms (Views: 43.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-13 09:29:27 -0300
+Processing by ApplicationController#home as HTML
+  Rendered text template (0.0ms)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-13 09:29:31 -0300
+Processing by ApplicationController#home as HTML
+  Rendered text template (0.1ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2016-05-13 09:29:37 -0300
+Processing by ApiController#home as HTML
+  Rendered text template (0.0ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
