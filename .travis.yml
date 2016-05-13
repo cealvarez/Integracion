@@ -17,6 +17,7 @@ script:
   - bundle exec rake db:drop
   - bundle exec rake db:create
   - bundle exec rake db:migrate
+  - bundle exec rake test
 
 deploy:
   provider: heroku
@@ -25,6 +26,5 @@ deploy:
   app: tranquil-gorge-23262
   strategy: git
 #  run:
- #   - "rake db:migrate"
-#script:
-#  - bundle exec rake
+#    - "rake db:migrate"
+  
