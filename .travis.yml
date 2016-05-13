@@ -27,4 +27,4 @@ deploy:
   run:
     - "rake db:migrate"
 script:
-  - rake
+  - bundle exec rake
