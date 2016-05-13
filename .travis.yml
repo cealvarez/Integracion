@@ -8,10 +8,10 @@ env:
 #  - DB=mysql
   - DB=postgresql
 
-before_script:
-  - sudo apt-get install graphicsmagick
+#before_script:
+#  - sudo apt-get install graphicsmagick
 #  - mysql -e 'create database chromotype_test'
-  - psql -c 'create database chromotype_test' -U postgres
+#  - psql -c 'create database chromotype_test' -U postgres
 
 deploy:
   provider: heroku
