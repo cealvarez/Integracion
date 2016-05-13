@@ -13,10 +13,10 @@ env:
 #  - mysql -e 'create database chromotype_test'
 #  - psql -c 'create database chromotype_test' -U postgres
 
-script:
-  - bundle exec rake db:drop
-  - bundle exec rake db:create
-  - bundle exec rake db:migrate
+#script:
+#  - bundle exec rake db:drop
+#  - bundle exec rake db:create
+#  - bundle exec rake db:migrate
 
 deploy:
   provider: heroku
