@@ -19,7 +19,7 @@ deploy:
     secure: 334d93d0-a30a-4df0-b183-c529c0b4caad
   app: tranquil-gorge-23262
   strategy: git
-  run:
-    - "rake db:migrate"
+  #run:
+  #  - "rake db:migrate"
 #script:
 #  - rake
