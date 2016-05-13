@@ -13,5 +13,10 @@ before_script:
 #  - mysql -e 'create database chromotype_test'
   - psql -c 'create database chromotype_test' -U postgres
 
+deploy:
+  provider: heroku
+  api_key:
+    secure: 334d93d0-a30a-4df0-b183-c529c0b4caad
+  app: tranquil-gorge-23262
 #script:
 #  - rake
