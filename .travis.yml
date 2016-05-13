@@ -26,5 +26,5 @@ deploy:
   strategy: git
   run:
     - "rake db:migrate"
-#script:
-#  - rake
+script:
+  - rake
