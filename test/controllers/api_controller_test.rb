@@ -11,7 +11,7 @@ class ApiControllerTest < ActionController::TestCase
     assert_equal(9, SimpleNumber.new(3).multiply(3), "Has fallado")
   end
   #test "obtener_post_api" do
-  #  get :obtener_post_api
+  #  post :obtener_post_api
   #  assert_response :success
   #end
 end

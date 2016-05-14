@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   get 'home' => 'api#home'
   #get 'api/consultar/:tag' => 'api#contar_post_api', defaults: {format: :json}
-  get 'api/posts/:tag' => 'api#obtener_post_api', defaults: {format: :json}
+  post 'instagram/tag/buscar' => 'api#obtener_post_api', defaults: {format: :json}
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
