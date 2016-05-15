@@ -83,7 +83,6 @@ class ApiController < ApplicationController
 		end
 		
 	end
-	##TO DO: imagenes de mejor calidad
 	def home
 		render text: "otra ruta"
 	end

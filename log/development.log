@@ -1514,3 +1514,9 @@ Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 03:25:57 -0400
 Processing by ApiController#obtener_post_api as JSON
   Parameters: {"tag"=>"lucario", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"lucario", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
 Completed 200 OK in 3122ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 03:39:33 -0400
+Processing by ApiController#obtener_post_api as JSON
+  Parameters: {"tag"=>"lucario", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"lucario", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Completed 200 OK in 5335ms (Views: 3.9ms | ActiveRecord: 0.0ms)
