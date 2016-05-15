@@ -26,8 +26,6 @@ class ApiController < ApplicationController
 	end
 
 	def obtener_post_api
-		commit = `git rev-parse --short HEAD`
-		puts commit
 		#token = '2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402'
 		token = params[:access_token]
 		post_num = 20
@@ -68,7 +66,8 @@ class ApiController < ApplicationController
 				#puts objetos
 				@num_posts = contar_post_api(tag, token)
 				meta_json = {:total => @num_posts}
-				respuesta_json = {:metadata => meta_json, :posts => objetos}.to_json
+				commit = `git describe --always`
+				respuesta_json = {:metadata => meta_json, :posts => objetos, :version => commit.strip}.to_json
 				my_hash = JSON.parse(respuesta_json)
 				respond_to do |format|
 				  format.html {}
@@ -84,7 +83,7 @@ class ApiController < ApplicationController
 		end
 		
 	end
-	##TO DO: agregar version, imagenes de mejor calidad
+	##TO DO: imagenes de mejor calidad
 	def home
 		render text: "otra ruta"
 	end

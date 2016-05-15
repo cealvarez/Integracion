@@ -1466,3 +1466,51 @@ Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 03:03:30 -0400
 Processing by ApiController#obtener_post_api as JSON
   Parameters: {"tag"=>"luigi", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"luigi", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
 Completed 200 OK in 5776ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 03:17:33 -0400
+
+SyntaxError (/home/camilo/Escritorio/2016-1/Taller de Integración/app/controllers/api_controller.rb:29: dynamic constant assignment
+		APP_VERSION = `git describe --always` unless defined? APP_VERSION
+		             ^):
+  app/controllers/api_controller.rb:29: dynamic constant assignment
+
+
+  Rendered /home/camilo/.rvm/gems/ruby-2.3.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (3.3ms)
+  Rendered /home/camilo/.rvm/gems/ruby-2.3.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/camilo/.rvm/gems/ruby-2.3.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (9.2ms)
+  Rendered /home/camilo/.rvm/gems/ruby-2.3.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.1ms)
+  Rendered /home/camilo/.rvm/gems/ruby-2.3.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (32.6ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 03:17:58 -0400
+
+SyntaxError (/home/camilo/Escritorio/2016-1/Taller de Integración/app/controllers/api_controller.rb:29: dynamic constant assignment
+		APP_VERSION = 'git describe --always'
+		             ^):
+  app/controllers/api_controller.rb:29: dynamic constant assignment
+
+
+  Rendered /home/camilo/.rvm/gems/ruby-2.3.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (2.8ms)
+  Rendered /home/camilo/.rvm/gems/ruby-2.3.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/camilo/.rvm/gems/ruby-2.3.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/camilo/.rvm/gems/ruby-2.3.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /home/camilo/.rvm/gems/ruby-2.3.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (21.4ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 03:19:58 -0400
+Processing by ApiController#obtener_post_api as JSON
+  Parameters: {"tag"=>"luigi", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"luigi", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Completed 200 OK in 4736ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 03:23:37 -0400
+Processing by ApiController#obtener_post_api as JSON
+  Parameters: {"tag"=>"lucario", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"lucario", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Completed 200 OK in 3910ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 03:25:57 -0400
+Processing by ApiController#obtener_post_api as JSON
+  Parameters: {"tag"=>"lucario", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"lucario", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Completed 200 OK in 3122ms (Views: 4.6ms | ActiveRecord: 0.0ms)
