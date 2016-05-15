@@ -67,7 +67,8 @@ class ApiController < ApplicationController
 				@num_posts = contar_post_api(tag, token)
 				meta_json = {:total => @num_posts}
 				commit = `git describe --always`
-				respuesta_json = {:metadata => meta_json, :posts => objetos, :version => commit.strip}.to_json
+				commit = '1.1.0'
+				respuesta_json = {:metadata => meta_json, :posts => objetos, :version => commit}.to_json
 				my_hash = JSON.parse(respuesta_json)
 				respond_to do |format|
 				  format.html {}
