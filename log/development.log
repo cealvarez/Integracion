@@ -1377,3 +1377,92 @@ Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-13 22:57:19 -0300
 Processing by ApiController#obtener_post_api as JSON
   Parameters: {"tag"=>"nintendo", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"nintendo", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
 Completed 200 OK in 2264ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 00:54:09 -0400
+Processing by ApiController#obtener_post_api as JSON
+  Parameters: {"tag"=>"nintendo", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"nintendo", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Completed 200 OK in 4875ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 01:19:14 -0400
+Processing by ApiController#obtener_post_api as JSON
+  Parameters: {"tag"=>"nintendo", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"nintendo", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Completed 200 OK in 6980ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 01:19:54 -0400
+Processing by ApiController#obtener_post_api as JSON
+  Parameters: {"tag"=>"nintendo", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"nintendo", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Completed 500 Internal Server Error in 2857ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/api_controller.rb:57:in `block in obtener_post_api'
+  app/controllers/api_controller.rb:56:in `obtener_post_api'
+
+
+  Rendered /home/camilo/.rvm/gems/ruby-2.3.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (4.2ms)
+  Rendered /home/camilo/.rvm/gems/ruby-2.3.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/camilo/.rvm/gems/ruby-2.3.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/camilo/.rvm/gems/ruby-2.3.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /home/camilo/.rvm/gems/ruby-2.3.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (29.8ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 01:20:30 -0400
+Processing by ApiController#obtener_post_api as JSON
+  Parameters: {"tag"=>"nintendo", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"nintendo", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Completed 200 OK in 1661ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 01:24:46 -0400
+Processing by ApiController#obtener_post_api as JSON
+  Parameters: {"tag"=>"nintendo", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"nintendo", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Completed 200 OK in 2541ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 01:25:21 -0400
+Processing by ApiController#obtener_post_api as JSON
+  Parameters: {"tag"=>"nintendo", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"nintendo", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Completed 200 OK in 2244ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 01:26:03 -0400
+Processing by ApiController#obtener_post_api as JSON
+  Parameters: {"tag"=>"santiago", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"santiago", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Completed 200 OK in 2811ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 02:19:14 -0400
+Processing by ApiController#obtener_post_api as JSON
+  Parameters: {"tag"=>"nintendo", "access_token"=>"hola", "api"=>{"tag"=>"nintendo", "access_token"=>"hola"}}
+Completed 400 Bad Request in 2259ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 02:19:46 -0400
+Processing by ApiController#obtener_post_api as JSON
+  Parameters: {"tag"=>"nintendo", "access_token"=>"hola", "api"=>{"tag"=>"nintendo", "access_token"=>"hola"}}
+Completed 400 Bad Request in 3612ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 02:36:45 -0400
+Processing by ApiController#obtener_post_api as JSON
+  Parameters: {"tag"=>"pikachu", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"pikachu", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Completed 200 OK in 5908ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 02:55:28 -0400
+Processing by ApiController#obtener_post_api as JSON
+  Parameters: {"tag"=>"mewtwo", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"mewtwo", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Completed 200 OK in 3687ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 03:01:08 -0400
+Processing by ApiController#obtener_post_api as JSON
+  Parameters: {"tag"=>"mewtwo", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"mewtwo", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Completed 200 OK in 5058ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 03:03:30 -0400
+Processing by ApiController#obtener_post_api as JSON
+  Parameters: {"tag"=>"luigi", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"luigi", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
+Completed 200 OK in 5776ms (Views: 7.0ms | ActiveRecord: 0.0ms)

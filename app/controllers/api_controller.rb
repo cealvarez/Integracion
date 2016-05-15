@@ -16,31 +16,31 @@ class ApiController < ApplicationController
 		request["postman-token"] = 'a6719103-e787-baf6-90db-0618b6f3da85'
 		response = http.request(request)
 		response_json = JSON.parse(response.body)
-		variable = response_json["data"]["media_count"]
-		return variable
-		#otro_json = {:total => @variable}
-		#respuesta_json = {:metadata => otro_json, :idoc => 'jiji'}.to_json
-		#my_hash = JSON.parse(respuesta_json)
-		#respond_to do |format|
-		#  format.html {}
-		#  format.json { render :json => my_hash}
-		#  format.js
-		#end	
+		valido = response_json["meta"]["code"].to_i
+		if (valido == 200)
+			variable = response_json["data"]["media_count"]
+			return variable
+		else
+			return nil
+		end	
 	end
 
 	def obtener_post_api
+		commit = `git rev-parse --short HEAD`
+		puts commit
 		#token = '2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402'
 		token = params[:access_token]
 		post_num = 20
 		objetos = []
 		tag = params[:tag]
-		puts tag
-		puts token
+		#puts tag
+		#puts token
 		if token.nil? || tag.nil?
 			respuesta_json = {:error => 400}.to_json ###ver si lo quito o no
 			#render :nothing => true
 			render :json => respuesta_json, :status => :bad_request
 		else
+			
 			url = URI("https://api.instagram.com/v1/tags/"+ tag +"/media/recent?access_token=" + token)
 			http = Net::HTTP.new(url.host, url.port)
 			http.use_ssl = true
@@ -51,30 +51,40 @@ class ApiController < ApplicationController
 			request["postman-token"] = 'a6719103-e787-baf6-90db-0618b6f3da85'
 			response = http.request(request)
 			response_json = JSON.parse(response.body)
-			for i in 0..2
-				tag_post = response_json["data"][i]["tags"]
-				username_post = response_json["data"][i]["user"]["username"]
-				likes_post = response_json["data"][i]["likes"]["count"]
-				image_post = response_json["data"][i]["images"]["standard_resolution"]["url"]
-				caption_post = response_json["data"][i]["caption"]["text"]
-				post_json = Hash.new
-				post_json = {:tags => tag_post, :username => username_post, :likes => likes_post, :url => image_post, :caption => caption_post}
-				objetos.push(post_json)
+			valido = response_json["meta"]["code"].to_i
+			if (valido == 200)
+				largo = response_json["data"].length
+				#puts largo
+				for i in 0..largo-1
+					tag_post = response_json["data"][i]["tags"]
+					username_post = response_json["data"][i]["user"]["username"]
+					likes_post = response_json["data"][i]["likes"]["count"]
+					image_post = response_json["data"][i]["images"]["standard_resolution"]["url"]
+					caption_post = response_json["data"][i]["caption"]["text"]
+					post_json = Hash.new
+					post_json = {:tags => tag_post, :username => username_post, :likes => likes_post, :url => image_post, :caption => caption_post}
+					objetos.push(post_json)
+				end
+				#puts objetos
+				@num_posts = contar_post_api(tag, token)
+				meta_json = {:total => @num_posts}
+				respuesta_json = {:metadata => meta_json, :posts => objetos}.to_json
+				my_hash = JSON.parse(respuesta_json)
+				respond_to do |format|
+				  format.html {}
+				  format.json { render :json => my_hash}
+				  format.js
+				end
+			else
+				respuesta_json = {:error => 400}.to_json
+				render :json => respuesta_json, :status => :bad_request
+				#return nil
 			end
-			#puts objetos
-			@num_posts = contar_post_api(tag, token)
-			meta_json = {:total => @num_posts}
-			respuesta_json = {:metadata => meta_json, :posts => objetos}.to_json
-			my_hash = JSON.parse(respuesta_json)
-			respond_to do |format|
-			  format.html {}
-			  format.json { render :json => my_hash}
-			  format.js
-			end	
+				
 		end
 		
 	end
-	##TO DO: agregar version, agregar test, imagenes de mejor calidad, cantidad de posts
+	##TO DO: agregar version, imagenes de mejor calidad
 	def home
 		render text: "otra ruta"
 	end
