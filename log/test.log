@@ -104,3 +104,631 @@ Completed 200 OK in 189ms (Views: 188.8ms | ActiveRecord: 0.0ms)
 ApiControllerTest: test_suma
 ----------------------------
   [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (584.9ms)[0m  [1mDROP DATABASE IF EXISTS "db/example_test"[0m
+  [1m[35m (1621.2ms)[0m  CREATE DATABASE "db/example_test" ENCODING = 'utf8'
+  [1m[36mSQL (0.2ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (138.4ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (86.0ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (10.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+----------------------------
+ApiControllerTest: test_suma
+----------------------------
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+---------------------------------------
+ApiControllerTest: test_should_get_home
+---------------------------------------
+Processing by ApiController#home as HTML
+  Rendered text template (0.0ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (443.6ms)[0m  [1mDROP DATABASE IF EXISTS "db/example_test"[0m
+  [1m[35m (876.6ms)[0m  CREATE DATABASE "db/example_test" ENCODING = 'utf8'
+  [1m[36mSQL (0.6ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (66.3ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (64.9ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.8ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (9.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+---------------------------------------
+ApiControllerTest: test_should_get_home
+---------------------------------------
+Processing by ApiController#home as HTML
+  Rendered text template (0.0ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+----------------------------
+ApiControllerTest: test_suma
+----------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+----------------------------------------
+ApiControllerTest: test_obtener_post_api
+----------------------------------------
+Processing by ApiController#obtener_post_api as HTML
+Completed 400 Bad Request in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (449.9ms)[0m  [1mDROP DATABASE IF EXISTS "db/example_test"[0m
+  [1m[35m (943.0ms)[0m  CREATE DATABASE "db/example_test" ENCODING = 'utf8'
+  [1m[36mSQL (0.2ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (67.2ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (75.6ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (10.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.7ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+----------------------------------------
+ApiControllerTest: test_obtener_post_api
+----------------------------------------
+Processing by ApiController#obtener_post_api as HTML
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+---------------------------------------
+ApiControllerTest: test_should_get_home
+---------------------------------------
+Processing by ApiController#home as HTML
+  Rendered text template (0.0ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+----------------------------
+ApiControllerTest: test_suma
+----------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (423.3ms)[0m  [1mDROP DATABASE IF EXISTS "db/example_test"[0m
+  [1m[35m (821.0ms)[0m  CREATE DATABASE "db/example_test" ENCODING = 'utf8'
+  [1m[36mSQL (0.3ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (67.8ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (73.5ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.5ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (10.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+---------------------------------------
+ApiControllerTest: test_should_get_home
+---------------------------------------
+Processing by ApiController#home as HTML
+  Rendered text template (0.0ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+----------------------------------------
+ApiControllerTest: test_obtener_post_api
+----------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+----------------------------
+ApiControllerTest: test_suma
+----------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (435.6ms)[0m  [1mDROP DATABASE IF EXISTS "db/example_test"[0m
+  [1m[35m (776.3ms)[0m  CREATE DATABASE "db/example_test" ENCODING = 'utf8'
+  [1m[36mSQL (0.3ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (75.5ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (76.0ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (10.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.6ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+----------------------------------------
+ApiControllerTest: test_obtener_post_api
+----------------------------------------
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+---------------------------------------
+ApiControllerTest: test_should_get_home
+---------------------------------------
+Processing by ApiController#home as HTML
+  Rendered text template (0.0ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+----------------------------
+ApiControllerTest: test_suma
+----------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (236.6ms)[0m  [1mDROP DATABASE IF EXISTS "db/example_test"[0m
+  [1m[35m (898.7ms)[0m  CREATE DATABASE "db/example_test" ENCODING = 'utf8'
+  [1m[36mSQL (0.2ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (63.9ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (75.8ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (10.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+----------------------------
+ApiControllerTest: test_suma
+----------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+----------------------------------------
+ApiControllerTest: test_posts_token_malo
+----------------------------------------
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+---------------------------------------
+ApiControllerTest: test_should_get_home
+---------------------------------------
+Processing by ApiController#home as HTML
+  Rendered text template (0.0ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (225.3ms)[0m  [1mDROP DATABASE IF EXISTS "db/example_test"[0m
+  [1m[35m (798.5ms)[0m  CREATE DATABASE "db/example_test" ENCODING = 'utf8'
+  [1m[36mSQL (0.3ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (59.5ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (72.8ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (10.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+---------------------------------------
+ApiControllerTest: test_should_get_home
+---------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+----------------------------
+ApiControllerTest: test_suma
+----------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+ApiControllerTest: test_contar_posts_token_malo
+-----------------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+------------------------------------
+ApiControllerTest: test_obtener_post
+------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (424.1ms)[0m  [1mDROP DATABASE IF EXISTS "db/example_test"[0m
+  [1m[35m (787.7ms)[0m  CREATE DATABASE "db/example_test" ENCODING = 'utf8'
+  [1m[36mSQL (0.3ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (61.3ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (76.2ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.8ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (9.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+---------------------------------------
+ApiControllerTest: test_should_get_home
+---------------------------------------
+Processing by ApiController#home as HTML
+  Rendered text template (0.0ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------
+ApiControllerTest: test_obtener_post
+------------------------------------
+Processing by ApiController#obtener_post_api as HTML
+  Parameters: {"tag"=>"pokemon", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}
+Completed 500 Internal Server Error in 7325ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+----------------------------
+ApiControllerTest: test_suma
+----------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+ApiControllerTest: test_contar_posts_token_malo
+-----------------------------------------------
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (445.2ms)[0m  [1mDROP DATABASE IF EXISTS "db/example_test"[0m
+  [1m[35m (1042.9ms)[0m  CREATE DATABASE "db/example_test" ENCODING = 'utf8'
+  [1m[36mSQL (0.2ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (60.1ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (74.4ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.5ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (9.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.6ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+ApiControllerTest: test_contar_posts_token_malo
+-----------------------------------------------
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+----------------------------
+ApiControllerTest: test_suma
+----------------------------
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+---------------------------------------
+ApiControllerTest: test_should_get_home
+---------------------------------------
+Processing by ApiController#home as HTML
+  Rendered text template (0.0ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+------------------------------------
+ApiControllerTest: test_obtener_post
+------------------------------------
+Processing by ApiController#obtener_post_api as HTML
+  Parameters: {"tag"=>"pokemon", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}
+Completed 500 Internal Server Error in 1470ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (427.4ms)[0m  [1mDROP DATABASE IF EXISTS "db/example_test"[0m
+  [1m[35m (876.5ms)[0m  CREATE DATABASE "db/example_test" ENCODING = 'utf8'
+  [1m[36mSQL (0.3ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (59.3ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (75.3ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.6ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (9.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+------------------------------------
+ApiControllerTest: test_obtener_post
+------------------------------------
+Processing by ApiController#obtener_post_api as HTML
+  Parameters: {"tag"=>"pokemon", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}
+Completed 500 Internal Server Error in 2512ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+----------------------------
+ApiControllerTest: test_suma
+----------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+ApiControllerTest: test_contar_posts_token_malo
+-----------------------------------------------
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+---------------------------------------
+ApiControllerTest: test_should_get_home
+---------------------------------------
+Processing by ApiController#home as HTML
+  Rendered text template (0.1ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (325.6ms)[0m  [1mDROP DATABASE IF EXISTS "db/example_test"[0m
+  [1m[35m (743.3ms)[0m  CREATE DATABASE "db/example_test" ENCODING = 'utf8'
+  [1m[36mSQL (0.2ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (67.7ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (75.4ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.7ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (9.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+ApiControllerTest: test_contar_posts_token_malo
+-----------------------------------------------
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+------------------------------------
+ApiControllerTest: test_obtener_post
+------------------------------------
+Processing by ApiController#obtener_post_api as HTML
+  Parameters: {"tag"=>"pokemon", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}
+Completed 500 Internal Server Error in 2214ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+---------------------------------------
+ApiControllerTest: test_should_get_home
+---------------------------------------
+Processing by ApiController#home as HTML
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+----------------------------
+ApiControllerTest: test_suma
+----------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (440.4ms)[0m  [1mDROP DATABASE IF EXISTS "db/example_test"[0m
+  [1m[35m (853.8ms)[0m  CREATE DATABASE "db/example_test" ENCODING = 'utf8'
+  [1m[36mSQL (0.2ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (60.3ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (75.8ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (10.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+------------------------------------
+ApiControllerTest: test_obtener_post
+------------------------------------
+Processing by ApiController#obtener_post_api as HTML
+  Parameters: {"tag"=>"pokemon", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}
+Completed 500 Internal Server Error in 4256ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+ApiControllerTest: test_contar_posts_token_malo
+-----------------------------------------------
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+----------------------------
+ApiControllerTest: test_suma
+----------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+---------------------------------------
+ApiControllerTest: test_should_get_home
+---------------------------------------
+Processing by ApiController#home as HTML
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (430.5ms)[0m  [1mDROP DATABASE IF EXISTS "db/example_test"[0m
+  [1m[35m (787.7ms)[0m  CREATE DATABASE "db/example_test" ENCODING = 'utf8'
+  [1m[36mSQL (0.2ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (88.6ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (109.1ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (10.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------
+ApiControllerTest: test_obtener_post
+------------------------------------
+Processing by ApiController#obtener_post_api as HTML
+  Parameters: {"tag"=>"pokemon", "access_token"=>"2002alguntoken"}
+Completed 400 Bad Request in 3302ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+----------------------------
+ApiControllerTest: test_suma
+----------------------------
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+---------------------------------------
+ApiControllerTest: test_should_get_home
+---------------------------------------
+Processing by ApiController#home as HTML
+  Rendered text template (0.0ms)
+Completed 200 OK in 8ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+ApiControllerTest: test_contar_posts_token_malo
+-----------------------------------------------
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (531.2ms)[0m  [1mDROP DATABASE IF EXISTS "db/example_test"[0m
+  [1m[35m (787.0ms)[0m  CREATE DATABASE "db/example_test" ENCODING = 'utf8'
+  [1m[36mSQL (0.3ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (65.3ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (84.6ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.7ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (109.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.7ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+ApiControllerTest: test_contar_posts_token_malo
+-----------------------------------------------
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+----------------------------
+ApiControllerTest: test_suma
+----------------------------
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+----------------------------------------------
+ApiControllerTest: test_obtener_post_sin_token
+----------------------------------------------
+Processing by ApiController#obtener_post_api as HTML
+  Parameters: {"tag"=>"pokemon", "access_token"=>""}
+Completed 400 Bad Request in 1219ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+ApiControllerTest: test_obtener_post_token_malo
+-----------------------------------------------
+Processing by ApiController#obtener_post_api as HTML
+  Parameters: {"tag"=>"pokemon", "access_token"=>"2002alguntoken"}
+Completed 400 Bad Request in 697ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+---------------------------------------
+ApiControllerTest: test_should_get_home
+---------------------------------------
+Processing by ApiController#home as HTML
+  Rendered text template (0.0ms)
+Completed 200 OK in 9ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (431.1ms)[0m  [1mDROP DATABASE IF EXISTS "db/example_test"[0m
+  [1m[35m (787.7ms)[0m  CREATE DATABASE "db/example_test" ENCODING = 'utf8'
+  [1m[36mSQL (0.4ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (59.1ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (75.9ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (10.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+----------------------------
+ApiControllerTest: test_suma
+----------------------------
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+----------------------------------------------
+ApiControllerTest: test_obtener_post_sin_token
+----------------------------------------------
+Processing by ApiController#obtener_post_api as HTML
+  Parameters: {"tag"=>"pokemon", "access_token"=>""}
+Completed 400 Bad Request in 3760ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+ApiControllerTest: test_obtener_post_token_malo
+-----------------------------------------------
+Processing by ApiController#obtener_post_api as HTML
+  Parameters: {"tag"=>"pokemon", "access_token"=>"2002alguntoken"}
+Completed 400 Bad Request in 855ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+ApiControllerTest: test_contar_posts_token_malo
+-----------------------------------------------
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+---------------------------------------
+ApiControllerTest: test_should_get_home
+---------------------------------------
+Processing by ApiController#home as HTML
+  Rendered text template (0.0ms)
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------
+ApiControllerTest: test_contar_posts
+------------------------------------
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (330.5ms)[0m  [1mDROP DATABASE IF EXISTS "db/example_test"[0m
+  [1m[35m (876.3ms)[0m  CREATE DATABASE "db/example_test" ENCODING = 'utf8'
+  [1m[36mSQL (0.3ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (82.6ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (75.8ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (10.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (429.8ms)[0m  [1mDROP DATABASE IF EXISTS "db/example_test"[0m
+  [1m[35m (787.7ms)[0m  CREATE DATABASE "db/example_test" ENCODING = 'utf8'
+  [1m[36mSQL (0.2ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (66.7ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (85.1ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.5ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (10.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------
+ApiControllerTest: test_contar_posts
+------------------------------------
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+------------------------------------
+ApiControllerTest: test_obtener_post
+------------------------------------
+Processing by ApiController#obtener_post_api as HTML
+  Parameters: {"tag"=>"pokemon", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}
+Completed 500 Internal Server Error in 1781ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+----------------------------------------------
+ApiControllerTest: test_obtener_post_sin_token
+----------------------------------------------
+Processing by ApiController#obtener_post_api as HTML
+  Parameters: {"tag"=>"pokemon", "access_token"=>""}
+Completed 400 Bad Request in 6079ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+ApiControllerTest: test_obtener_post_token_malo
+-----------------------------------------------
+Processing by ApiController#obtener_post_api as HTML
+  Parameters: {"tag"=>"pokemon", "access_token"=>"2002alguntoken"}
+Completed 400 Bad Request in 2134ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+ApiControllerTest: test_contar_posts_token_malo
+-----------------------------------------------
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (330.4ms)[0m  [1mDROP DATABASE IF EXISTS "db/example_test"[0m
+  [1m[35m (898.5ms)[0m  CREATE DATABASE "db/example_test" ENCODING = 'utf8'
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (76.8ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (84.1ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.8ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (9.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+------------------------------------
+ApiControllerTest: test_contar_posts
+------------------------------------
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+ApiControllerTest: test_contar_posts_token_malo
+-----------------------------------------------
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+----------------------------------------------
+ApiControllerTest: test_obtener_post_sin_token
+----------------------------------------------
+Processing by ApiController#obtener_post_api as HTML
+  Parameters: {"tag"=>"pokemon", "access_token"=>""}
+Completed 400 Bad Request in 544ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+ApiControllerTest: test_obtener_post_token_malo
+-----------------------------------------------
+Processing by ApiController#obtener_post_api as HTML
+  Parameters: {"tag"=>"pokemon", "access_token"=>"2002alguntoken"}
+Completed 400 Bad Request in 990ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+------------------------------------
+ApiControllerTest: test_obtener_post
+------------------------------------
+Processing by ApiController#obtener_post_api as HTML
+  Parameters: {"tag"=>"pokemon", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}
+Completed 500 Internal Server Error in 2576ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (325.0ms)[0m  [1mDROP DATABASE IF EXISTS "db/example_test"[0m
+  [1m[35m (1020.6ms)[0m  CREATE DATABASE "db/example_test" ENCODING = 'utf8'
+  [1m[36mSQL (0.3ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (72.9ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (86.8ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (10.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+----------------------------------------------
+ApiControllerTest: test_obtener_post_sin_token
+----------------------------------------------
+Processing by ApiController#obtener_post_api as HTML
+  Parameters: {"tag"=>"pokemon", "access_token"=>""}
+Completed 400 Bad Request in 3839ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+ApiControllerTest: test_contar_posts_token_malo
+-----------------------------------------------
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+ApiControllerTest: test_obtener_post_token_malo
+-----------------------------------------------
+Processing by ApiController#obtener_post_api as HTML
+  Parameters: {"tag"=>"pokemon", "access_token"=>"2002alguntoken"}
+Completed 400 Bad Request in 726ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+------------------------------------
+ApiControllerTest: test_contar_posts
+------------------------------------
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+------------------------------------
+ApiControllerTest: test_obtener_post
+------------------------------------
+Processing by ApiController#obtener_post_api as JSON
+  Parameters: {"tag"=>"pokemon", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}
+Completed 200 OK in 4304ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
