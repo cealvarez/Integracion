@@ -1520,3 +1520,23 @@ Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 03:39:33 -0400
 Processing by ApiController#obtener_post_api as JSON
   Parameters: {"tag"=>"lucario", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402", "api"=>{"tag"=>"lucario", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}}
 Completed 200 OK in 5335ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2016-05-15 14:28:47 -0400
+Processing by ApiController#home as */*
+  Parameters: {"api"=>{}}
+  Rendered text template (0.0ms)
+Completed 200 OK in 62ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2016-05-15 14:29:24 -0400
+
+LoadError (cannot load such file -- heroku):
+  app/controllers/api_controller.rb:4:in `<top (required)>'
+
+
+  Rendered /home/camilo/.rvm/gems/ruby-2.3.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (3.4ms)
+  Rendered /home/camilo/.rvm/gems/ruby-2.3.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/camilo/.rvm/gems/ruby-2.3.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/camilo/.rvm/gems/ruby-2.3.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /home/camilo/.rvm/gems/ruby-2.3.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (27.1ms)
